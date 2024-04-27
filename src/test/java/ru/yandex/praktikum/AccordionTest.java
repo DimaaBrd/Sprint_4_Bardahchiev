@@ -11,7 +11,6 @@ import ru.yandex.praktikum.WebDriverFactory;
 import ru.yandex.praktikum.page.MainPage;
 
 import static org.junit.Assert.assertTrue;
-import static ru.yandex.praktikum.Constants.constant.Service_url.SERVICE_URL;
 
 @RunWith(Parameterized.class)
 public class AccordionTest {
