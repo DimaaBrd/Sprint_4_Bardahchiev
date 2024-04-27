@@ -11,19 +11,23 @@ import java.time.Duration;
 
 public class MainPage {
     private final WebDriver webDriver;
+    //Локатор для кнопки статус заказа
     private final By orderStatusLocator = By.xpath("//button[text()='Статус заказа']");
+    //Локатор для кнопки принятия кук
     private final By cookiesButtonLocator = By.id("rcc-confirm-button");
+    //Локатор для поля ввода номера заказа
     private final By orderNumberInputLocator = By.xpath("//input[@placeholder='Введите номер заказа']");
-
+//Локатор для кнопки GO
     private final By goButtonLocator = By.xpath("//button[text()='Go!']");
-
+//Локатор для изображения NotFound
     private final By notFoundImgLocator = By.xpath("//img[@alt='Not found']");
-
+//локатор для верхней кнопки заказать
     private final By createOrderButtonLocator = By.xpath("//div[contains(@class, 'Header')]/button[text()='Заказать']");
-
+//Локатор для нижней кнопки заказать
     private final By bottomCreateOrderButtonLocator = By.xpath("//div[contains(@class, 'Home')]/button[text()='Заказать']");
-
+//Локатор для вопроса в аккордеоне
     private final String questionLocator = "accordion__heading-%s";
+    //Локатор для ответа в аккордеоне
     private final String answerLocator = "//div[contains(@id ,'accordion__panel')][.='%s']";
     public MainPage(WebDriver webDriver){
         this.webDriver = webDriver;

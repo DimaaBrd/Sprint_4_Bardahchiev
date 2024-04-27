@@ -40,7 +40,7 @@ public class AccordionTest {
     }
     @Before
     public void setup(){
-        webDriver = WebDriverFactory.getWebDriver(System.getProperty("browser" , "firefox"));
+        webDriver = WebDriverFactory.getWebDriver(System.getProperty("browser" , "chrome"));
 
         webDriver.get("https://qa-scooter.praktikum-services.ru/");
     }

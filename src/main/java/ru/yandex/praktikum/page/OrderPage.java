@@ -20,6 +20,7 @@ public class OrderPage {
     //Локатор станции метро в выпадающем списке
 
     private final String metroDefinitionLocator = "//div[text()='%s']";
+    //Локатор для кнопки Далее
     private final By nextButtonLocator = (By.xpath("//button[text()='Далее']"));
     public OrderPage(WebDriver webDriver){
         this.webDriver = webDriver;
