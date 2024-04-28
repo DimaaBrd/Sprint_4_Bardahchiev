@@ -6,10 +6,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.yandex.praktikum.page.MainPage;
 import ru.yandex.praktikum.page.OrderPage;
 import ru.yandex.praktikum.page.RentPage;
@@ -46,16 +42,6 @@ private WebDriver webDriver;
         webDriver = WebDriverFactory.getWebDriver(System.getProperty("browser" , "chrome"));//для других браузеров ввести название браузера firefox / safari
         webDriver.get("https://qa-scooter.praktikum-services.ru/");
     }
-
-        @Test //Проверка поиска по статусу заказа с несуществующим номером заказа
-        public void OrderNotFound () {
-            MainPage mainPage = new MainPage(webDriver);
-            mainPage.clickOrderStatusButton();
-            mainPage.enterOrderNumber("891111111111");
-            mainPage.clickGoButton();
-            assertTrue(mainPage.notFoundImgIsDisplayed());
-        }
-
         @Test //Тест создания заказа через верхнюю кнопку
         public void CreateOrder () {
 

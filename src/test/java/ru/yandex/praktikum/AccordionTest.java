@@ -5,11 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.WebDriver;
-import ru.yandex.praktikum.WebDriverFactory;
 import ru.yandex.praktikum.page.MainPage;
-
 import static org.junit.Assert.assertTrue;
 
 
