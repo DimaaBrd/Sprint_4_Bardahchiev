@@ -9,9 +9,6 @@ import org.openqa.selenium.*;
 import ru.yandex.praktikum.page.MainPage;
 import ru.yandex.praktikum.page.OrderPage;
 import ru.yandex.praktikum.page.RentPage;
-
-import java.time.Duration;
-
 import static org.junit.Assert.assertTrue;
 @RunWith(Parameterized.class)
 public class OrderTest {
